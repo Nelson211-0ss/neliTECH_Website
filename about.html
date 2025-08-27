@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - neliTECH</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Cambria', 'Times New Roman', 'serif'],
+                    },
+                    colors: {
+                        primary: '#7c0d89',
+                        dark: '#26012a',
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'slide-up': 'slideUp 0.5s ease-out',
+                        'slide-down': 'slideDown 0.5s ease-out',
+                        'fade-in': 'fadeIn 0.5s ease-out',
+                        'slide-left': 'slideLeft 0.5s ease-out',
+                        'slide-right': 'slideRight 0.5s ease-out',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(100px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        },
+                        slideDown: {
+                            '0%': { transform: 'translateY(-100px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideLeft: {
+                            '0%': { transform: 'translateX(100px)', opacity: '0' },
+                            '100%': { transform: 'translateX(0)', opacity: '1' },
+                        },
+                        slideRight: {
+                            '0%': { transform: 'translateX(-100px)', opacity: '0' },
+                            '100%': { transform: 'translateX(0)', opacity: '1' },
+                        },
+                    },
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-white">
+    <!-- Header will be loaded here -->
+    <div id="header"></div>
+
+    <!-- About Hero Section -->
+    <section class="pt-16 md:pt-20 lg:pt-24 pb-8 md:pb-12 lg:pb-16 bg-dark text-white relative overflow-hidden" style="background-image: linear-gradient(135deg, rgba(38, 1, 42, 0.8) 0%, rgba(58, 2, 63, 0.6) 50%, rgba(38, 1, 42, 0.8) 100%), linear-gradient(45deg, rgba(26, 1, 42, 0.9) 0%, rgba(38, 1, 42, 0.7) 100%), url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center; background-attachment: fixed;">
+        <div class="container mx-auto px-4 relative z-10 py-4 md:py-6 lg:py-8">
+            <div class="max-w-5xl mx-auto text-center">
+                <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-3 md:mb-4 leading-tight">
+                    <span class="text-white drop-shadow-2xl">About</span> 
+                    <span class="text-primary">
+                        neliTECH
+                    </span>
+                </h1>
+                <p class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-4 md:mb-6 text-white/90 px-2 md:px-4 drop-shadow-lg font-light">
+                    We are a team of passionate technologists dedicated to transforming businesses through innovative IT solutions.
+                </p>
+                <p class="text-xs md:text-sm lg:text-base text-white/70 max-w-2xl mx-auto mb-6 md:mb-8">
+                    With years of experience in web development, mobile applications, and digital transformation, we help businesses thrive in the digital age.
+                </p>
+                
+                <!-- Company Stats -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mt-8 md:mt-10">
+                    <div class="text-center">
+                        <div class="text-lg md:text-xl lg:text-2xl font-bold text-white mb-1">
+                            <span class="counter" data-target="5">0</span>+
+                        </div>
+                        <p class="text-xs md:text-sm text-white/70">Years Experience</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-lg md:text-xl lg:text-2xl font-bold text-white mb-1">
+                            <span class="counter" data-target="50">0</span>+
+                        </div>
+                        <p class="text-xs md:text-sm text-white/70">Projects Completed</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-lg md:text-xl lg:text-2xl font-bold text-white mb-1">
+                            <span class="counter" data-target="30">0</span>+
+                        </div>
+                        <p class="text-xs md:text-sm text-white/70">Happy Clients</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-lg md:text-xl lg:text-2xl font-bold text-white mb-1">
+                            <span class="counter" data-target="10">0</span>+
+                        </div>
+                        <p class="text-xs md:text-sm text-white/70">Team Members</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision Redesigned Section -->
+    <section class="py-8 md:py-12 lg:py-16 xl:py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12">
+                <div class="bg-white rounded-2xl shadow-lg p-4 md:p-6 lg:p-8 xl:p-10 flex flex-col items-center text-center">
+                    <div class="mb-3 md:mb-4 text-primary">
+                        <svg class="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 16h-1v-4h-1m1-4h.01M12 2a10 10 0 100 20 10 10 0 000-20z" />
+                        </svg>
+                    </div>
+                    <h2 class="text-xl md:text-2xl lg:text-3xl font-bold mb-3 md:mb-4">Our Mission</h2>
+                    <p class="text-gray-600 text-sm md:text-base">To empower businesses with cutting-edge technology solutions that drive growth, efficiency, and innovation in the digital age.</p>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg p-4 md:p-6 lg:p-8 xl:p-10 flex flex-col items-center text-center">
+                    <div class="mb-3 md:mb-4 text-primary">
+                        <svg class="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6v6l4 2" />
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" fill="none" />
+                        </svg>
+                    </div>
+                    <h2 class="text-xl md:text-2xl lg:text-3xl font-bold mb-3 md:mb-4">Our Vision</h2>
+                    <p class="text-gray-600 text-sm md:text-base">To be the leading technology partner for businesses worldwide, known for our innovative solutions and exceptional service.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CEO & Founder Section -->
+    <section class="py-12 md:py-16 lg:py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-8 md:mb-12">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-4 md:mb-6 text-dark">
+                    Meet Our Founder
+                </h2>
+                <p class="text-base md:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto">
+                    The visionary leader behind neliTECH's success
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-gray-50 rounded-3xl p-6 md:p-8 lg:p-10">
+                    <div class="flex flex-col lg:flex-row items-center gap-6 md:gap-8 lg:gap-12">
+                        <div class="flex-shrink-0">
+                            <div class="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-2xl overflow-hidden shadow-xl bg-gray-200 flex items-center justify-center">
+                                <img src="images/ceo.jpg" alt="CEO & Founder Photo" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="flex-1 text-center lg:text-left">
+                            <h3 class="text-xl md:text-2xl lg:text-3xl font-bold mb-2 text-primary">Nelson O. Ochan</h3>
+                            <p class="text-base md:text-lg font-semibold mb-3 md:mb-4 text-gray-700">CEO & Founder</p>
+                            <p class="text-gray-600 mb-4 text-sm md:text-base leading-relaxed">Visionary leader with 5+ years of experience in Information Systems & Technology, driving innovation and digital transformation. Passionate about creating technology solutions that make a real impact.</p>
+                            <blockquote class="italic text-primary border-l-4 border-primary pl-3 md:pl-4 text-sm md:text-base mb-4">"Innovation distinguishes between a leader and a follower."</blockquote>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-medium">Information Systems</span>
+                                <span class="px-3 py-1 bg-accent/10 text-accent rounded-full text-xs font-medium">Technology</span>
+                                <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-xs font-medium">Innovation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-12 md:py-16 lg:py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-8 md:mb-12">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-4 md:mb-6 text-dark">
+                    Our Team
+                </h2>
+                <p class="text-base md:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto">
+                    Meet the talented individuals who make neliTECH exceptional
+                </p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+                <!-- Team Member 1 -->
+                <div class="group bg-white rounded-2xl shadow-lg hover:shadow-xl p-4 md:p-6 flex flex-col items-center text-center transition-all duration-500 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-full overflow-hidden bg-gray-200 mb-3 md:mb-4 ring-4 ring-primary/10 group-hover:ring-primary/20 transition-all duration-300">
+                        <img src="images/team/nelson.jpeg" alt="Nelson O. Ochan" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <h3 class="text-sm md:text-base lg:text-lg font-bold mb-1 text-gray-800">Nelson O. Ochan</h3>
+                    <p class="text-primary mb-2 text-xs md:text-sm font-semibold">CEO & Founder</p>
+                    <p class="text-gray-600 mb-3 text-xs md:text-sm leading-relaxed">Visionary leader with 5+ years of experience in Information Systems & Technology, driving innovation and digital transformation.</p>
+                    <div class="flex space-x-2 mt-2">
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors" aria-label="LinkedIn">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm13.5 10.28h-3v-4.5c0-1.08-.02-2.47-1.5-2.47-1.5 0-1.73 1.17-1.73 2.39v4.58h-3v-9h2.89v1.23h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v4.72z"/></svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors" aria-label="Twitter">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557a9.93 9.93 0 01-2.828.775 4.932 4.932 0 002.165-2.724c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482c-4.086-.205-7.713-2.164-10.141-5.144a4.822 4.822 0 00-.666 2.475c0 1.708.87 3.213 2.188 4.096a4.904 4.904 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.936 4.936 0 01-2.224.084c.627 1.956 2.444 3.377 4.6 3.417a9.867 9.867 0 01-6.102 2.104c-.396 0-.787-.023-1.175-.067a13.945 13.945 0 007.548 2.212c9.058 0 14.009-7.496 14.009-13.986 0-.21-.005-.423-.015-.634a10.025 10.025 0 002.457-2.548z"/></svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors" aria-label="Email">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8 flex flex-col items-center text-center transition-transform hover:-translate-y-2 hover:shadow-2xl team-card">
+                    <div class="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden bg-gray-200 mb-3 md:mb-4">
+                        <img src="images/team/kiden.jpg" alt="Kiden Gladys" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-lg md:text-xl font-semibold mb-1 text-sm md:text-base">Kiden Gladys</h3>
+                    <p class="text-primary mb-2 text-sm md:text-base">CFO</p>
+                    <p class="text-gray-600 mb-3 md:mb-4 text-xs md:text-sm">Technical Finance specializing in emerging technologies.</p>
+                    <div class="flex space-x-3 md:space-x-4 mt-2">
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors" aria-label="LinkedIn">
+                            <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm13.5 10.28h-3v-4.5c0-1.08-.02-2.47-1.5-2.47-1.5 0-1.73 1.17-1.73 2.39v4.58h-3v-9h2.89v1.23h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v4.72z"/></svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors" aria-label="Twitter">
+                            <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557a9.93 9.93 0 01-2.828.775 4.932 4.932 0 002.165-2.724c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482c-4.086-.205-7.713-2.164-10.141-5.144a4.822 4.822 0 00-.666 2.475c0 1.708.87 3.213 2.188 4.096a4.904 4.904 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.936 4.936 0 01-2.224.084c.627 1.956 2.444 3.377 4.6 3.417a9.867 9.867 0 01-6.102 2.104c-.396 0-.787-.023-1.175-.067a13.945 13.945 0 007.548 2.212c9.058 0 14.009-7.496 14.009-13.986 0-.21-.005-.423-.015-.634a10.025 10.025 0 002.457-2.548z"/></svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors" aria-label="Email">
+                            <svg class="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- Team Member 3 -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8 flex flex-col items-center text-center transition-transform hover:-translate-y-2 hover:shadow-2xl team-card">
+                    <div class="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden bg-gray-200 mb-3 md:mb-4">
+                        <img src="images/team/stuart.jpg" alt="Muzira Stuart" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-lg md:text-xl font-semibold mb-1 text-sm md:text-base">Muzira Stuart</h3>
+                    <p class="text-primary mb-2 text-sm md:text-base">CTO</p>
+                    <p class="text-gray-600 mb-3 md:mb-4 text-xs md:text-sm">Technical expert specializing in emerging technologies, system architecture, and leading innovative development teams.</p>
+                    <div class="flex space-x-3 md:space-x-4 mt-2">
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors" aria-label="LinkedIn">
+                            <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm13.5 10.28h-3v-4.5c0-1.08-.02-2.47-1.5-2.47-1.5 0-1.73 1.17-1.73 2.39v4.58h-3v-9h2.89v1.23h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v4.72z"/></svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors" aria-label="Twitter">
+                            <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557a9.93 9.93 0 01-2.828.775 4.932 4.932 0 002.165-2.724c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482c-4.086-.205-7.713-2.164-10.141-5.144a4.822 4.822 0 00-.666 2.475c0 1.708.87 3.213 2.188 4.096a4.904 4.904 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.936 4.936 0 01-2.224.084c.627 1.956 2.444 3.377 4.6 3.417a9.867 9.867 0 01-6.102 2.104c-.396 0-.787-.023-1.175-.067a13.945 13.945 0 007.548 2.212c9.058 0 14.009-7.496 14.009-13.986 0-.21-.005-.423-.015-.634a10.025 10.025 0 002.457-2.548z"/></svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors" aria-label="Email">
+                            <svg class="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8 flex flex-col items-center text-center transition-transform hover:-translate-y-2 hover:shadow-2xl team-card">
+                    <div class="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden bg-gray-200 mb-3 md:mb-4">
+                        <img src="images/team/saul.jpg" alt="Mwegyesa Saul" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-lg md:text-xl font-semibold mb-1 text-sm md:text-base">Mwegyesa Saul</h3>
+                    <p class="text-primary mb-2 text-sm md:text-base">Marketing & Quality Assurance</p>
+                    <p class="text-gray-600 mb-3 md:mb-4 text-xs md:text-sm">Expert in digital marketing strategies and quality assurance processes, ensuring both market success and product excellence.</p>
+                    <div class="flex space-x-3 md:space-x-4 mt-2">
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors" aria-label="LinkedIn">
+                            <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm13.5 10.28h-3v-4.5c0-1.08-.02-2.47-1.5-2.47-1.5 0-1.73 1.17-1.73 2.39v4.58h-3v-9h2.89v1.23h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v4.72z"/></svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors" aria-label="Twitter">
+                            <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557a9.93 9.93 0 01-2.828.775 4.932 4.932 0 002.165-2.724c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482c-4.086-.205-7.713-2.164-10.141-5.144a4.822 4.822 0 00-.666 2.475c0 1.708.87 3.213 2.188 4.096a4.904 4.904 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.936 4.936 0 01-2.224.084c.627 1.956 2.444 3.377 4.6 3.417a9.867 9.867 0 01-6.102 2.104c-.396 0-.787-.023-1.175-.067a13.945 13.945 0 007.548 2.212c9.058 0 14.009-7.496 14.009-13.986 0-.21-.005-.423-.015-.634a10.025 10.025 0 002.457-2.548z"/></svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors" aria-label="Email">
+                            <svg class="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer will be loaded here -->
+    <div id="footer"></div>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

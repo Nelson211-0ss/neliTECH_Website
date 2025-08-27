@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>neliTECH - Innovative IT Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Cambria', 'Times New Roman', 'serif'],
+                    },
+                    colors: {
+                        primary: '#7c0d89',
+                        dark: '#26012a',
+                        accent: '#00d4ff',
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'slide-up': 'slideUp 0.5s ease-out',
+                        'slide-down': 'slideDown 0.5s ease-out',
+                        'fade-in': 'fadeIn 0.5s ease-out',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(100px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        },
+                        slideDown: {
+                            '0%': { transform: 'translateY(-100px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white">
+    <!-- Header will be loaded here -->
+    <div id="header"></div>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen pt-16 md:pt-20 lg:pt-24 pb-8 md:pb-12 lg:pb-16 flex items-center justify-center overflow-hidden" style="background-image: linear-gradient(135deg, rgba(38, 1, 42, 0.8) 0%, rgba(58, 2, 63, 0.6) 50%, rgba(38, 1, 42, 0.8) 100%), linear-gradient(45deg, rgba(26, 1, 42, 0.9) 0%, rgba(38, 1, 42, 0.7) 100%), url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center; background-attachment: fixed;">
+        <!-- Animated background elements -->
+        <div class="absolute inset-0">
+            <div class="absolute top-1/4 left-1/4 w-32 h-32 bg-primary/20 rounded-full filter blur-3xl animate-pulse"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-40 h-40 bg-accent/20 rounded-full filter blur-3xl animate-pulse" style="animation-delay: 2s;"></div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-24 h-24 bg-primary/10 rounded-full filter blur-2xl animate-pulse" style="animation-delay: 4s;"></div>
+        </div>
+
+        <div class="container mx-auto px-4 z-10 py-4 md:py-6 lg:py-8">
+            <div class="max-w-6xl mx-auto">
+                <!-- Single column centered layout -->
+                <div class="text-center max-w-4xl mx-auto">
+                    <div class="mb-8 md:mb-12">
+                        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black mb-4 md:mb-6 leading-tight">
+                            <span class="text-white drop-shadow-2xl">Welcome to</span> 
+                            <span class="text-primary">
+                                neliTECH
+                            </span>
+                        </h1>
+                        <p class="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mb-4 md:mb-6 text-white/90 px-2 md:px-4 drop-shadow-lg font-light">
+                            Transforming Ideas into 
+                            <span class="text-accent font-semibold">Digital Reality</span>
+                        </p>
+                        <p class="text-sm md:text-base lg:text-lg text-white/70 max-w-2xl mx-auto mb-8 md:mb-10">
+                            We craft innovative digital solutions that drive business growth, enhance user experiences, and shape the future of technology.
+                        </p>
+                    </div>
+
+                    <!-- CTA buttons -->
+                    <div class="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-center px-2 md:px-4 mb-8 md:mb-10">
+                        <a href="contact.html" class="group inline-flex items-center bg-primary hover:bg-primary/90 text-white px-6 md:px-8 lg:px-10 py-3 md:py-4 lg:py-5 rounded-full text-sm md:text-base lg:text-lg font-bold transition-all duration-500 transform hover:scale-105 hover:shadow-2xl shadow-lg">
+                            Start Your Project
+                            <svg class="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
+                        </a>
+                        <a href="products.html" class="group inline-flex items-center bg-white/10 border-2 border-white/30 hover:bg-white/20 text-white px-6 md:px-8 lg:px-10 py-3 md:py-4 lg:py-5 rounded-full text-sm md:text-base lg:text-lg font-semibold transition-all duration-500 transform hover:scale-105">
+                            View Our Work
+                            <svg class="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Counter Section -->
+                <div class="mt-12 md:mt-16 lg:mt-20">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 lg:gap-12 max-w-4xl mx-auto">
+                        <div class="text-center">
+                            <div class="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-2">
+                                <span class="counter" data-target="50">0</span>+
+                            </div>
+                            <p class="text-sm md:text-base text-white/70">Projects Completed</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-2">
+                                <span class="counter" data-target="30">0</span>+
+                            </div>
+                            <p class="text-sm md:text-base text-white/70">Happy Clients</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-2">
+                                <span class="counter" data-target="5">0</span>+
+                            </div>
+                            <p class="text-sm md:text-base text-white/70">Years Experience</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-2">
+                                <span class="counter" data-target="24">0</span>/7
+                            </div>
+                            <p class="text-sm md:text-base text-white/70">Support Available</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Enhanced scroll indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <div class="flex flex-col items-center text-white/60 hover:text-white transition-colors duration-300 cursor-pointer" onclick="document.querySelector('#services').scrollIntoView({behavior: 'smooth'})">
+                <span class="text-sm font-medium mb-2">Scroll to explore</span>
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section id="services" class="py-16 md:py-20 lg:py-24 xl:py-32 bg-gray-50 relative overflow-hidden">
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-12 md:mb-16 lg:mb-20">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-6 md:mb-8 text-dark">
+                    Our Services
+                </h2>
+                <p class="text-lg md:text-xl lg:text-2xl text-gray-600 max-w-3xl mx-auto">
+                    Comprehensive digital solutions designed to transform your business and drive growth
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10">
+                <!-- Web Development -->
+                <div class="group bg-white rounded-3xl p-8 md:p-10 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 border border-gray-100 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="relative z-10">
+                        <div class="w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-primary to-accent rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <svg class="w-8 h-8 md:w-10 md:h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-bold mb-4 text-gray-800 group-hover:text-primary transition-colors duration-300">Web Development</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">Custom web solutions tailored to your business needs with modern technologies and responsive design.</p>
+                        <ul class="space-y-2 text-sm text-gray-500">
+                            <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-3"></span>Responsive Design</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-3"></span>E-commerce Solutions</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-3"></span>Progressive Web Apps</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Mobile Apps -->
+                <div class="group bg-white rounded-3xl p-8 md:p-10 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 border border-gray-100 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="relative z-10">
+                        <div class="w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-primary to-accent rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <svg class="w-8 h-8 md:w-10 md:h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-bold mb-4 text-gray-800 group-hover:text-primary transition-colors duration-300">Mobile Apps</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">Native and cross-platform mobile applications that deliver exceptional user experiences.</p>
+                        <ul class="space-y-2 text-sm text-gray-500">
+                            <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-3"></span>iOS Development</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-3"></span>Android Development</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-3"></span>Cross-platform Solutions</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Cybersecurity -->
+                <div class="group bg-white rounded-3xl p-8 md:p-10 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 border border-gray-100 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="relative z-10">
+                        <div class="w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-primary to-accent rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <svg class="w-8 h-8 md:w-10 md:h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-bold mb-4 text-gray-800 group-hover:text-primary transition-colors duration-300">Cybersecurity</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">Comprehensive security solutions to protect your digital assets and ensure compliance.</p>
+                        <ul class="space-y-2 text-sm text-gray-500">
+                            <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-3"></span>Security Audits</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-3"></span>Penetration Testing</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-3"></span>Compliance Solutions</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Cloud Solutions -->
+                <div class="group bg-white rounded-3xl p-8 md:p-10 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 border border-gray-100 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="relative z-10">
+                        <div class="w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-primary to-accent rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <svg class="w-8 h-8 md:w-10 md:h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-bold mb-4 text-gray-800 group-hover:text-primary transition-colors duration-300">Cloud Solutions</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">Scalable cloud infrastructure and migration services for modern businesses.</p>
+                        <ul class="space-y-2 text-sm text-gray-500">
+                            <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-3"></span>Cloud Migration</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-3"></span>Infrastructure as Code</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-3"></span>Disaster Recovery</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Data Analytics -->
+                <div class="group bg-white rounded-3xl p-8 md:p-10 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 border border-gray-100 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="relative z-10">
+                        <div class="w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-primary to-accent rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <svg class="w-8 h-8 md:w-10 md:h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-bold mb-4 text-gray-800 group-hover:text-primary transition-colors duration-300">Data Analytics</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">Business intelligence and data-driven insights to optimize your operations.</p>
+                        <ul class="space-y-2 text-sm text-gray-500">
+                            <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-3"></span>Business Intelligence</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-3"></span>Predictive Analytics</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-3"></span>Data Visualization</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- IT Consulting -->
+                <div class="group bg-white rounded-3xl p-8 md:p-10 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 border border-gray-100 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="relative z-10">
+                        <div class="w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-primary to-accent rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <svg class="w-8 h-8 md:w-10 md:h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-bold mb-4 text-gray-800 group-hover:text-primary transition-colors duration-300">IT Consulting</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">Strategic technology planning and digital transformation guidance.</p>
+                        <ul class="space-y-2 text-sm text-gray-500">
+                            <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-3"></span>Technology Strategy</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-3"></span>Digital Transformation</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-3"></span>Process Optimization</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CTA Section -->
+            <div class="text-center mt-16 md:mt-20">
+                <a href="services.html" class="inline-flex items-center bg-gradient-to-r from-primary to-accent hover:from-accent hover:to-primary text-white px-8 md:px-10 lg:px-12 py-4 md:py-5 lg:py-6 rounded-full text-lg md:text-xl font-bold transition-all duration-500 transform hover:scale-105 hover:shadow-2xl shadow-lg">
+                    Explore All Services
+                    <svg class="w-5 h-5 md:w-6 md:h-6 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-8 md:py-12 lg:py-16 xl:py-20 bg-gray-50 reveal-on-scroll" data-animate="animate-slide-up">
+        <div class="container mx-auto px-4">
+            <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-6 md:mb-8 lg:mb-10 xl:mb-12 reveal-on-scroll" data-animate="animate-slide-up">Why Choose neliTECH?</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
+                <div class="bg-white rounded-xl shadow-md p-4 md:p-6 lg:p-8 flex flex-col items-center text-center reveal-on-scroll card-hover" data-animate="animate-fade-in">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=facearea&w=128&q=80" alt="Expertise" class="w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16 rounded-full mb-3 md:mb-4 object-cover">
+                    <h3 class="font-semibold mb-2 text-sm md:text-base">Expertise</h3>
+                    <p class="text-gray-600 text-xs md:text-sm">A team of certified professionals with years of experience.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-4 md:p-6 lg:p-8 flex flex-col items-center text-center reveal-on-scroll card-hover" data-animate="animate-fade-in" style="animation-delay:0.2s;">
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=facearea&w=128&q=80" alt="Innovation" class="w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16 rounded-full mb-3 md:mb-4 object-cover">
+                    <h3 class="font-semibold mb-2 text-sm md:text-base">Innovation</h3>
+                    <p class="text-gray-600 text-xs md:text-sm">We use the latest technologies to deliver creative solutions.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-4 md:p-6 lg:p-8 flex flex-col items-center text-center reveal-on-scroll card-hover" data-animate="animate-fade-in" style="animation-delay:0.4s;">
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=facearea&w=128&q=80" alt="Support" class="w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16 rounded-full mb-3 md:mb-4 object-cover">
+                    <h3 class="font-semibold mb-2 text-sm md:text-base">Support</h3>
+                    <p class="text-gray-600 text-xs md:text-sm">24/7 customer support to keep your business running smoothly.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-4 md:p-6 lg:p-8 flex flex-col items-center text-center reveal-on-scroll card-hover" data-animate="animate-fade-in" style="animation-delay:0.6s;">
+                    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=facearea&w=128&q=80" alt="Client Satisfaction" class="w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16 rounded-full mb-3 md:mb-4 object-cover">
+                    <h3 class="font-semibold mb-2 text-sm md:text-base">Client Satisfaction</h3>
+                    <p class="text-gray-600 text-xs md:text-sm">Our clients love us! We deliver on time and exceed expectations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="py-8 md:py-12 lg:py-16 xl:py-20 bg-white reveal-on-scroll" data-animate="animate-slide-up">
+        <div class="container mx-auto px-4">
+            <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-6 md:mb-8 lg:mb-10 xl:mb-12 reveal-on-scroll" data-animate="animate-slide-up">Featured Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
+                <div class="bg-gray-50 rounded-xl shadow-md overflow-hidden reveal-on-scroll card-hover" data-animate="animate-fade-in">
+                    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" alt="Project 1" class="w-full h-32 md:h-40 lg:h-48 object-cover">
+                    <div class="p-3 md:p-4 lg:p-6">
+                        <h3 class="font-semibold mb-2 text-sm md:text-base">E-Commerce Platform</h3>
+                        <p class="text-gray-600 text-xs md:text-sm mb-3 md:mb-4">A scalable, secure online store for a global retailer, featuring real-time analytics and seamless checkout.</p>
+                        <a href="#" class="text-primary font-semibold hover:underline text-sm md:text-base">View Case Study →</a>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-xl shadow-md overflow-hidden reveal-on-scroll card-hover" data-animate="animate-fade-in" style="animation-delay:0.2s;">
+                    <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=600&q=80" alt="Project 2" class="w-full h-32 md:h-40 lg:h-48 object-cover">
+                    <div class="p-3 md:p-4 lg:p-6">
+                        <h3 class="font-semibold mb-2 text-sm md:text-base">Mobile Banking App</h3>
+                        <p class="text-gray-600 text-xs md:text-sm mb-3 md:mb-4">A user-friendly mobile app for a fintech startup, with top-tier security and a beautiful UI.</p>
+                        <a href="#" class="text-primary font-semibold hover:underline text-sm md:text-base">View Case Study →</a>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-xl shadow-md overflow-hidden reveal-on-scroll card-hover md:col-span-2 lg:col-span-1" data-animate="animate-fade-in" style="animation-delay:0.4s;">
+                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" alt="Project 3" class="w-full h-32 md:h-40 lg:h-48 object-cover">
+                    <div class="p-3 md:p-4 lg:p-6">
+                        <h3 class="font-semibold mb-2 text-sm md:text-base">Cloud Migration</h3>
+                        <p class="text-gray-600 text-xs md:text-sm mb-3 md:mb-4">Migrated a legacy system to the cloud, improving reliability and reducing costs for a major client.</p>
+                        <a href="#" class="text-primary font-semibold hover:underline text-sm md:text-base">View Case Study →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Testimonials Section -->
+    <section class="py-8 md:py-12 lg:py-16 xl:py-20 bg-gray-50 reveal-on-scroll" data-animate="animate-slide-up">
+        <div class="container mx-auto px-4">
+            <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-6 md:mb-8 lg:mb-10 xl:mb-12 reveal-on-scroll" data-animate="animate-slide-up">What Our Clients Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
+                <div class="bg-white rounded-xl shadow-md p-4 md:p-6 lg:p-8 flex flex-col items-center text-center reveal-on-scroll card-hover testimonial-card" data-animate="animate-fade-in">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client 1" class="w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16 rounded-full mb-3 md:mb-4 object-cover">
+                    <p class="text-gray-600 mb-3 md:mb-4 text-sm md:text-base">"neliTECH delivered our project on time and exceeded our expectations. Their team is highly skilled and professional."</p>
+                    <h4 class="font-semibold text-sm md:text-base">Michael Brown</h4>
+                    <span class="text-xs md:text-sm text-gray-400">CTO, RetailCorp</span>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-4 md:p-6 lg:p-8 flex flex-col items-center text-center reveal-on-scroll card-hover testimonial-card" data-animate="animate-fade-in" style="animation-delay:0.2s;">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client 2" class="w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16 rounded-full mb-3 md:mb-4 object-cover">
+                    <p class="text-gray-600 mb-3 md:mb-4 text-sm md:text-base">"The support from neliTECH is outstanding. We always feel like a priority and their solutions are top-notch."</p>
+                    <h4 class="font-semibold text-sm md:text-base">Sarah Lee</h4>
+                    <span class="text-xs md:text-sm text-gray-400">Founder, FinStart</span>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-4 md:p-6 lg:p-8 flex flex-col items-center text-center reveal-on-scroll card-hover testimonial-card md:col-span-2 lg:col-span-1" data-animate="animate-fade-in" style="animation-delay:0.4s;">
+                    <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Client 3" class="w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16 rounded-full mb-3 md:mb-4 object-cover">
+                    <p class="text-gray-600 mb-3 md:mb-4 text-sm md:text-base">"We trust neliTECH with our most critical systems. Their expertise and dedication are unmatched."</p>
+                    <h4 class="font-semibold text-sm md:text-base">David Kim</h4>
+                    <span class="text-xs md:text-sm text-gray-400">COO, HealthPlus</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted By Section -->
+    <section class="py-6 md:py-8 lg:py-12 bg-white reveal-on-scroll" data-animate="animate-fade-in">
+        <div class="container mx-auto px-4">
+            <h2 class="text-lg md:text-xl lg:text-2xl font-bold text-center mb-4 md:mb-6 lg:mb-8 reveal-on-scroll" data-animate="animate-slide-up">Trusted By</h2>
+            <div class="flex flex-wrap justify-center items-center gap-3 md:gap-4 lg:gap-8 reveal-on-scroll trusted-by" data-animate="animate-fade-in">
+                <img src="images/logog.jpeg" alt="Brand 1" class="h-6 md:h-8 lg:h-10 grayscale opacity-70 hover:opacity-100 transition-all">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Brand 2" class="h-6 md:h-8 lg:h-10 grayscale opacity-70 hover:opacity-100 transition-all">
+                <img src="images/HCLV-BUDGE-1.webp" alt="Brand 3" class="h-6 md:h-8 lg:h-10 grayscale opacity-70 hover:opacity-100 transition-all">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="Brand 4" class="h-6 md:h-8 lg:h-10 grayscale opacity-70 hover:opacity-100 transition-all">
+                <img src="images/prograte.png" alt="Brand 5" class="h-6 md:h-8 lg:h-10 grayscale opacity-70 hover:opacity-100 transition-all">
+                <img src="images/cyncare-logo.png" alt="Brand 6" class="h-6 md:h-8 lg:h-10 grayscale opacity-70 hover:opacity-100 transition-all">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer will be loaded here -->
+    <div id="footer"></div>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - neliTECH</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Cambria', 'Times New Roman', 'serif'],
+                    },
+                    colors: {
+                        primary: '#7c0d89',
+                        dark: '#26012a',
+                        accent: '#00d4ff',
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'slide-up': 'slideUp 0.5s ease-out',
+                        'slide-down': 'slideDown 0.5s ease-out',
+                        'fade-in': 'fadeIn 0.5s ease-out',
+                        'slide-left': 'slideLeft 0.5s ease-out',
+                        'slide-right': 'slideRight 0.5s ease-out',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(100px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        },
+                        slideDown: {
+                            '0%': { transform: 'translateY(-100px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideLeft: {
+                            '0%': { transform: 'translateX(100px)', opacity: '0' },
+                            '100%': { transform: 'translateX(0)', opacity: '1' },
+                        },
+                        slideRight: {
+                            '0%': { transform: 'translateX(-100px)', opacity: '0' },
+                            '100%': { transform: 'translateX(0)', opacity: '1' },
+                        },
+                    },
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-white">
+    <!-- Header will be loaded here -->
+    <div id="header"></div>
+
+    <!-- Services Hero Section -->
+    <section class="pt-20 md:pt-24 lg:pt-32 pb-12 md:pb-16 lg:pb-20 bg-dark text-white relative overflow-hidden" style="background-image: linear-gradient(135deg, rgba(38, 1, 42, 0.8) 0%, rgba(58, 2, 63, 0.6) 50%, rgba(38, 1, 42, 0.8) 100%), linear-gradient(45deg, rgba(26, 1, 42, 0.9) 0%, rgba(38, 1, 42, 0.7) 100%), url('https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center; background-attachment: fixed;">
+
+        <div class="container mx-auto px-4 relative z-10 py-8 md:py-12">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-6 md:mb-8 leading-tight">
+                    <span class="text-white drop-shadow-2xl">Our</span> 
+                    <span class="text-primary">
+                        Services
+                    </span>
+                </h1>
+                <p class="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-6 md:mb-8 text-white/90 px-2 md:px-4 drop-shadow-lg font-light">
+                    Comprehensive IT solutions tailored to your business needs
+                </p>
+                <p class="text-base md:text-lg lg:text-xl text-white/70 max-w-3xl mx-auto">
+                    From web development to cybersecurity, we provide end-to-end digital solutions that drive growth and innovation.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Services -->
+    <section class="py-16 md:py-20 lg:py-24 xl:py-32 bg-gray-50 relative overflow-hidden">
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-12 md:mb-16 lg:mb-20">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-6 md:mb-8 text-dark">
+                    What We Offer
+                </h2>
+                <p class="text-lg md:text-xl lg:text-2xl text-gray-600 max-w-3xl mx-auto">
+                    Comprehensive digital solutions designed to transform your business
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 lg:gap-12">
+                <!-- Web Development -->
+                <div class="group bg-white rounded-3xl p-8 md:p-10 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 border border-gray-100 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="relative z-10">
+                        <div class="w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-primary to-accent rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <svg class="w-8 h-8 md:w-10 md:h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <h2 class="text-xl md:text-2xl lg:text-3xl font-bold mb-4 text-gray-800 group-hover:text-primary transition-colors duration-300">Web Development</h2>
+                        <p class="text-gray-600 mb-6 leading-relaxed">Custom web applications and websites built with the latest technologies and best practices.</p>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-3"></span>Responsive Design</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-3"></span>E-commerce Solutions</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-3"></span>Content Management Systems</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-3"></span>Progressive Web Apps</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Mobile Development -->
+                <div class="group bg-white rounded-3xl p-8 md:p-10 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 border border-gray-100 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="relative z-10">
+                        <div class="w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-accent to-primary rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <svg class="w-8 h-8 md:w-10 md:h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <h2 class="text-xl md:text-2xl lg:text-3xl font-bold mb-4 text-gray-800 group-hover:text-primary transition-colors duration-300">Mobile Development</h2>
+                        <p class="text-gray-600 mb-6 leading-relaxed">Native and cross-platform mobile applications for iOS and Android with exceptional user experiences.</p>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-3"></span>iOS Development</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-3"></span>Android Development</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-3"></span>Cross-platform Solutions</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-3"></span>App Maintenance</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Cybersecurity -->
+                <div class="group bg-white rounded-3xl p-8 md:p-10 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 border border-gray-100 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="relative z-10">
+                        <div class="w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-primary to-accent rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <svg class="w-8 h-8 md:w-10 md:h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                            </svg>
+                        </div>
+                        <h2 class="text-xl md:text-2xl lg:text-3xl font-bold mb-4 text-gray-800 group-hover:text-primary transition-colors duration-300">Cybersecurity</h2>
+                        <p class="text-gray-600 mb-6 leading-relaxed">Comprehensive security solutions to protect your digital assets and ensure compliance.</p>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-3"></span>Security Audits</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-3"></span>Penetration Testing</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-3"></span>Security Monitoring</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-3"></span>Compliance Solutions</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Cloud Solutions -->
+                <div class="group bg-white rounded-3xl p-8 md:p-10 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 border border-gray-100 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="relative z-10">
+                        <div class="w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-accent to-primary rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <svg class="w-8 h-8 md:w-10 md:h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+                            </svg>
+                        </div>
+                        <h2 class="text-xl md:text-2xl lg:text-3xl font-bold mb-4 text-gray-800 group-hover:text-primary transition-colors duration-300">Cloud Solutions</h2>
+                        <p class="text-gray-600 mb-6 leading-relaxed">Scalable cloud infrastructure and migration services for modern businesses.</p>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-3"></span>Cloud Migration</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-3"></span>Infrastructure as Code</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-3"></span>Cloud Optimization</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-3"></span>Disaster Recovery</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 md:py-20 lg:py-24 xl:py-32 bg-gradient-to-br from-dark via-dark/95 to-primary/20 text-white relative overflow-hidden">
+        <!-- Background decoration -->
+        <div class="absolute inset-0">
+            <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-gradient-to-r from-primary/20 to-accent/20 rounded-full filter blur-3xl"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-to-l from-accent/20 to-primary/20 rounded-full filter blur-3xl"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-6 md:mb-8">
+                Ready to Transform Your 
+                <span class="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">Business?</span>
+            </h2>
+            <p class="text-lg md:text-xl lg:text-2xl mb-8 md:mb-10 text-white/80 max-w-3xl mx-auto">
+                Let's discuss how we can help you achieve your goals with cutting-edge technology solutions.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center items-center">
+                <a href="contact.html" class="group inline-flex items-center bg-gradient-to-r from-primary to-accent hover:from-accent hover:to-primary text-white px-8 md:px-10 lg:px-12 py-4 md:py-5 lg:py-6 rounded-full text-lg md:text-xl font-bold transition-all duration-500 transform hover:scale-105 hover:shadow-2xl shadow-lg">
+                    Get Started
+                    <svg class="w-5 h-5 md:w-6 md:h-6 ml-3 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg>
+                </a>
+                <a href="products.html" class="group inline-flex items-center bg-white/10 backdrop-blur-md border-2 border-white/30 hover:bg-white/20 text-white px-8 md:px-10 lg:px-12 py-4 md:py-5 lg:py-6 rounded-full text-lg md:text-xl font-semibold transition-all duration-500 transform hover:scale-105">
+                    View Our Work
+                    <svg class="w-5 h-5 md:w-6 md:h-6 ml-3 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer will be loaded here -->
+    <div id="footer"></div>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

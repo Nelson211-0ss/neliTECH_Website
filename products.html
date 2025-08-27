@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - neliTECH</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Cambria', 'Times New Roman', 'serif'],
+                    },
+                    colors: {
+                        primary: '#7c0d89',
+                        dark: '#26012a',
+                        accent: '#00d4ff',
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'slide-up': 'slideUp 0.5s ease-out',
+                        'slide-down': 'slideDown 0.5s ease-out',
+                        'fade-in': 'fadeIn 0.5s ease-out',
+                        'slide-left': 'slideLeft 0.5s ease-out',
+                        'slide-right': 'slideRight 0.5s ease-out',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(100px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        },
+                        slideDown: {
+                            '0%': { transform: 'translateY(-100px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideLeft: {
+                            '0%': { transform: 'translateX(100px)', opacity: '0' },
+                            '100%': { transform: 'translateX(0)', opacity: '1' },
+                        },
+                        slideRight: {
+                            '0%': { transform: 'translateX(-100px)', opacity: '0' },
+                            '100%': { transform: 'translateX(0)', opacity: '1' },
+                        },
+                    },
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-white">
+    <!-- Header will be loaded here -->
+    <div id="header"></div>
+
+    <!-- Products Hero Section -->
+    <section class="pt-16 md:pt-20 lg:pt-24 pb-8 md:pb-12 lg:pb-16 bg-dark text-white relative overflow-hidden" style="background-image: linear-gradient(135deg, rgba(38, 1, 42, 0.8) 0%, rgba(58, 2, 63, 0.6) 50%, rgba(38, 1, 42, 0.8) 100%), linear-gradient(45deg, rgba(26, 1, 42, 0.9) 0%, rgba(38, 1, 42, 0.7) 100%), url('https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center; background-attachment: fixed;">
+        <div class="container mx-auto px-4 relative z-10 py-4 md:py-6 lg:py-8">
+            <div class="max-w-5xl mx-auto text-center">
+                <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-3 md:mb-4 leading-tight">
+                    <span class="text-white drop-shadow-2xl">Our</span> 
+                    <span class="text-primary">
+                        Products
+                    </span>
+                </h1>
+                <p class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-4 md:mb-6 text-white/90 px-2 md:px-4 drop-shadow-lg font-light">
+                    Discover our portfolio of innovative web applications and digital solutions
+                </p>
+                <p class="text-xs md:text-sm lg:text-base text-white/70 max-w-2xl mx-auto mb-6 md:mb-8">
+                    From educational platforms to healthcare solutions, we've delivered cutting-edge digital products that make a difference.
+                </p>
+                
+                <!-- Product Stats -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mt-8 md:mt-10">
+                    <div class="text-center">
+                        <div class="text-lg md:text-xl lg:text-2xl font-bold text-white mb-1">
+                            <span class="counter" data-target="10">0</span>+
+                        </div>
+                        <p class="text-xs md:text-sm text-white/70">Web Applications</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-lg md:text-xl lg:text-2xl font-bold text-white mb-1">
+                            <span class="counter" data-target="8">0</span>+
+                        </div>
+                        <p class="text-xs md:text-sm text-white/70">Mobile Apps</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-lg md:text-xl lg:text-2xl font-bold text-white mb-1">
+                            <span class="counter" data-target="5">0</span>+
+                        </div>
+                        <p class="text-xs md:text-sm text-white/70">E-commerce</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-lg md:text-xl lg:text-2xl font-bold text-white mb-1">
+                            <span class="counter" data-target="15">0</span>+
+                        </div>
+                        <p class="text-xs md:text-sm text-white/70">Custom Solutions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid Section -->
+    <section class="py-12 md:py-16 lg:py-20 xl:py-24 bg-white relative overflow-hidden">
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-8 md:mb-12 lg:mb-16">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-4 md:mb-6 text-dark">
+                    Featured Projects
+                </h2>
+                <p class="text-base md:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto">
+                    Explore our diverse portfolio of innovative digital solutions
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-8 lg:gap-10">
+                <!-- JdiobeSTEM Foundation -->
+                <div class="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100 relative overflow-hidden">
+                    <div class="relative z-10">
+                        <div class="h-40 md:h-48 lg:h-56 overflow-hidden bg-gray-50 p-4 md:p-6 flex items-center justify-center">
+                            <img src="images/products/jdiobestem.png" alt="JdiobeSTEM Foundation Website" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-4 md:p-6">
+                            <div class="inline-flex items-center bg-primary text-white px-3 py-1.5 rounded-full text-xs font-bold mb-3">
+                                Education
+                            </div>
+                            <h3 class="text-lg md:text-xl font-bold mb-3 text-gray-800 group-hover:text-primary transition-colors duration-300">JdiobeSTEM Foundation</h3>
+                            <p class="text-gray-600 mb-4 leading-relaxed text-sm">A comprehensive platform for STEM education and youth development initiatives, empowering the next generation of innovators.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-2 py-1 bg-primary/10 text-primary rounded-full text-xs font-medium">STEM</span>
+                                <span class="px-2 py-1 bg-accent/10 text-accent rounded-full text-xs font-medium">Non-Profit</span>
+                                <span class="px-2 py-1 bg-gray-100 text-gray-600 rounded-full text-xs font-medium">Education</span>
+                            </div>
+                            <a href="https://jdiobestemfou.org" target="_blank" class="group/link inline-flex items-center bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 text-sm">
+                                Visit Website
+                                <svg class="w-3 h-3 ml-2 group-hover/link:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Prograte Capital Ventures -->
+                <div class="group bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 border border-gray-100 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="relative z-10">
+                        <div class="h-48 md:h-56 lg:h-64 overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 p-6 md:p-8 flex items-center justify-center">
+                            <img src="images/products/prograte.png" alt="Prograte Capital Ventures Website" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6 md:p-8">
+                            <div class="inline-flex items-center bg-gradient-to-r from-accent to-primary text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
+                                Finance
+                            </div>
+                            <h3 class="text-xl md:text-2xl font-bold mb-4 text-gray-800 group-hover:text-primary transition-colors duration-300">Prograte Capital Ventures</h3>
+                            <p class="text-gray-600 mb-6 leading-relaxed">Investment platform showcasing venture capital opportunities and portfolio management for growth-focused businesses.</p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">Investment</span>
+                                <span class="px-3 py-1 bg-accent/10 text-accent rounded-full text-sm font-medium">Venture Capital</span>
+                                <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm font-medium">Finance</span>
+                            </div>
+                            <a href="https://pcv.co.ug" target="_blank" class="group/link inline-flex items-center bg-gradient-to-r from-primary to-accent hover:from-accent hover:to-primary text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105">
+                                Visit Website
+                                <svg class="w-4 h-4 ml-2 group-hover/link:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EAI Consulting -->
+                <div class="group bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 border border-gray-100 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="relative z-10">
+                        <div class="h-48 md:h-56 lg:h-64 overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 p-6 md:p-8 flex items-center justify-center">
+                            <img src="images/products/eai.png" alt="EAI Consulting Website" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6 md:p-8">
+                            <div class="inline-flex items-center bg-gradient-to-r from-primary to-accent text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
+                                Consulting
+                            </div>
+                            <h3 class="text-xl md:text-2xl font-bold mb-4 text-gray-800 group-hover:text-primary transition-colors duration-300">EAI Consulting</h3>
+                            <p class="text-gray-600 mb-6 leading-relaxed">Professional consulting services platform with integrated client management system for business excellence.</p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">Business</span>
+                                <span class="px-3 py-1 bg-accent/10 text-accent rounded-full text-sm font-medium">Professional Services</span>
+                                <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm font-medium">Consulting</span>
+                            </div>
+                            <a href="https://eaiconsultingfirm.com/" target="_blank" class="group/link inline-flex items-center bg-gradient-to-r from-primary to-accent hover:from-accent hover:to-primary text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105">
+                                Visit Website
+                                <svg class="w-4 h-4 ml-2 group-hover/link:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WPESS -->
+                <div class="group bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 border border-gray-100 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="relative z-10">
+                        <div class="h-48 md:h-56 lg:h-64 overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 p-6 md:p-8 flex items-center justify-center">
+                            <img src="images/products/wpess.png" alt="WPESS Website" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6 md:p-8">
+                            <div class="inline-flex items-center bg-gradient-to-r from-accent to-primary text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
+                                Education
+                            </div>
+                            <h3 class="text-xl md:text-2xl font-bold mb-4 text-gray-800 group-hover:text-primary transition-colors duration-300">WPESS</h3>
+                            <p class="text-gray-600 mb-6 leading-relaxed">Educational platform for professional development and skill enhancement in the digital age.</p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">Professional Development</span>
+                                <span class="px-3 py-1 bg-accent/10 text-accent rounded-full text-sm font-medium">Skills Training</span>
+                                <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm font-medium">Education</span>
+                            </div>
+                            <a href="https://wpess.org" target="_blank" class="group/link inline-flex items-center bg-gradient-to-r from-primary to-accent hover:from-accent hover:to-primary text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105">
+                                Visit Website
+                                <svg class="w-4 h-4 ml-2 group-hover/link:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cyncare Health Staffing -->
+                <div class="group bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 border border-gray-100 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="relative z-10">
+                        <div class="h-48 md:h-56 lg:h-64 overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 p-6 md:p-8 flex items-center justify-center">
+                            <img src="images/products/cyncare.png" alt="Cyncare Health Staffing Website" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6 md:p-8">
+                            <div class="inline-flex items-center bg-gradient-to-r from-primary to-accent text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
+                                Healthcare
+                            </div>
+                            <h3 class="text-xl md:text-2xl font-bold mb-4 text-gray-800 group-hover:text-primary transition-colors duration-300">Cyncare Health Staffing</h3>
+                            <p class="text-gray-600 mb-6 leading-relaxed">Healthcare staffing platform connecting medical professionals with opportunities across the industry.</p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">Staffing</span>
+                                <span class="px-3 py-1 bg-accent/10 text-accent rounded-full text-sm font-medium">Recruitment</span>
+                                <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm font-medium">Healthcare</span>
+                            </div>
+                            <a href="https://cyncarehealthstaff.pcv.co.ug" target="_blank" class="group/link inline-flex items-center bg-gradient-to-r from-primary to-accent hover:from-accent hover:to-primary text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105">
+                                Visit Website
+                                <svg class="w-4 h-4 ml-2 group-hover/link:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- M-Vet -->
+                <div class="group bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 border border-gray-100 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="relative z-10">
+                        <div class="h-48 md:h-56 lg:h-64 overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 p-6 md:p-8 flex items-center justify-center">
+                            <img src="images/products/m-vet.png" alt="M-Vet Website" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6 md:p-8">
+                            <div class="inline-flex items-center bg-gradient-to-r from-accent to-primary text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
+                                Healthcare
+                            </div>
+                            <h3 class="text-xl md:text-2xl font-bold mb-4 text-gray-800 group-hover:text-primary transition-colors duration-300">M-Vet</h3>
+                            <p class="text-gray-600 mb-6 leading-relaxed">Veterinary services platform connecting pet owners with professional veterinary care and support.</p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">Veterinary</span>
+                                <span class="px-3 py-1 bg-accent/10 text-accent rounded-full text-sm font-medium">Pet Care</span>
+                                <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm font-medium">Healthcare</span>
+                            </div>
+                            <a href="https://m-vet.org" target="_blank" class="group/link inline-flex items-center bg-gradient-to-r from-primary to-accent hover:from-accent hover:to-primary text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105">
+                                Visit Website
+                                <svg class="w-4 h-4 ml-2 group-hover/link:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pulse Foundation -->
+                <div class="group bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 border border-gray-100 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="relative z-10">
+                        <div class="h-48 md:h-56 lg:h-64 overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 p-6 md:p-8 flex items-center justify-center">
+                            <img src="images/products/pulse.png" alt="Pulse Foundation Website" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6 md:p-8">
+                            <div class="inline-flex items-center bg-gradient-to-r from-primary to-accent text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
+                                Healthcare
+                            </div>
+                            <h3 class="text-xl md:text-2xl font-bold mb-4 text-gray-800 group-hover:text-primary transition-colors duration-300">Pulse Foundation</h3>
+                            <p class="text-gray-600 mb-6 leading-relaxed">Healthcare foundation platform promoting wellness and medical research initiatives for better health outcomes.</p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">Healthcare</span>
+                                <span class="px-3 py-1 bg-accent/10 text-accent rounded-full text-sm font-medium">Wellness</span>
+                                <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm font-medium">Research</span>
+                            </div>
+                            <a href="https://pulsefoundation.org" target="_blank" class="group/link inline-flex items-center bg-gradient-to-r from-primary to-accent hover:from-accent hover:to-primary text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105">
+                                Visit Website
+                                <svg class="w-4 h-4 ml-2 group-hover/link:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Corwado -->
+                <div class="group bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 border border-gray-100 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="relative z-10">
+                        <div class="h-48 md:h-56 lg:h-64 overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 p-6 md:p-8 flex items-center justify-center">
+                            <img src="images/products/corwado.png" alt="Corwado Website" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6 md:p-8">
+                            <div class="inline-flex items-center bg-gradient-to-r from-accent to-primary text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
+                                Technology
+                            </div>
+                            <h3 class="text-xl md:text-2xl font-bold mb-4 text-gray-800 group-hover:text-primary transition-colors duration-300">Corwado</h3>
+                            <p class="text-gray-600 mb-6 leading-relaxed">Innovative technology platform for digital transformation and automation solutions that drive efficiency.</p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">Technology</span>
+                                <span class="px-3 py-1 bg-accent/10 text-accent rounded-full text-sm font-medium">Automation</span>
+                                <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm font-medium">Digital Transformation</span>
+                            </div>
+                            <a href="https://corwado.com" target="_blank" class="group/link inline-flex items-center bg-gradient-to-r from-primary to-accent hover:from-accent hover:to-primary text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105">
+                                Visit Website
+                                <svg class="w-4 h-4 ml-2 group-hover/link:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-12 md:py-16 lg:py-20 xl:py-24 bg-dark text-white relative overflow-hidden">
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-4 md:mb-6">
+                Ready to Start Your 
+                <span class="text-primary">Project?</span>
+            </h2>
+            <p class="text-base md:text-lg lg:text-xl mb-6 md:mb-8 text-white/80 max-w-2xl mx-auto">
+                Let's discuss how we can help you bring your ideas to life with cutting-edge technology solutions.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-center">
+                <a href="contact.html" class="group inline-flex items-center bg-primary hover:bg-primary/90 text-white px-6 md:px-8 lg:px-10 py-3 md:py-4 lg:py-5 rounded-full text-sm md:text-base lg:text-lg font-bold transition-all duration-500 transform hover:scale-105 hover:shadow-2xl shadow-lg">
+                    Get Started
+                    <svg class="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 ml-2 md:ml-3 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg>
+                </a>
+                <a href="services.html" class="group inline-flex items-center bg-white/10 border-2 border-white/30 hover:bg-white/20 text-white px-6 md:px-8 lg:px-10 py-3 md:py-4 lg:py-5 rounded-full text-sm md:text-base lg:text-lg font-semibold transition-all duration-500 transform hover:scale-105">
+                    View Services
+                    <svg class="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 ml-2 md:ml-3 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer will be loaded here -->
+    <div id="footer"></div>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
